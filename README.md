@@ -18,9 +18,10 @@ El algoritmo se divide en 5 faces:
 - Por ultimo Imprimir la ruta encontrada de cada uno de estos nodos ( para esta implementacion solo imprime la primera ruta mas larga)  con mayor longitud de camino en un archivo ‘result.txt’ con complejidad O(n) 
 
 ## Complejidad total del algoritmo es:  O((n/2)^2) + 3O(n) + O(n+m) 
-
+## Complejidad total del algoritmo es:  O(n^2)
  
 
 ## Complejidad espacial: 
 
 La complejidad de la lista de adyacencia tiene su complejidad espacial en la cantidad de vertices(n) multiplicado por la cantidad de aristas(m). Es decir tiene complejidad: O(n*m)  
+## Para el pero de los casos la complejidad es O(n^2). 
