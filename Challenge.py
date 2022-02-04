@@ -101,11 +101,11 @@ def main():
     for v in range(0,len(Nodos), 1):
         g.addVertice(Nodos[v],Valores[v])
 
-    cont = 0
+    cont = 1
     
     for a in range(0,len(Valores), 1):
         for b in range(cont,len(Valores), 1):
-            if Valores[a] > Valores[b]:
+            if Valores[a] >= Valores[b]:
                 g.addArista(Nodos[a],Nodos[b])
                 g.vertices[Nodos[b]].grado += 1
         cont+=1
@@ -130,8 +130,7 @@ def main():
         file.write(str(len(final))+'\n')
         for lugar in final:
             file.write( str(g.vertices[lugar].id) + ', ' + str(g.vertices[lugar].valor) + '\n')
-
-    print(final)
+    #print(final)
     print(f"BFS ended in : {datetime.now() - start_time} seconds")
 
    #cosa = Valores.pop(0)
