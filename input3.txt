@@ -1,0 +1,8 @@
+7
+index1, 500
+index2, 300
+index3, 400
+index4, 200
+index5, 200
+index6, 100
+index7, 50
